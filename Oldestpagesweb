@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Zeyada&display=swap" rel="stylesheet">
+ 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QCX3G9KSPC"></script>
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/90a4d1138d.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>MANGA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="snapchat-btn">
+  <a href="//www.snapchat.com/invite-client">Invitez 👻</a>
+  <form action="">
+    <input type="text" placeholder="Entrez votre adresse email" id="email" />
+    <input type="submit" value="S'inscrire" onclick="saveVisitor()" />
+  </form>
+</div>
+
+
+<img src="https://i.gifer.com/1Ibj.gif" alt="Carré horizontal Rétrécir l’image code CSS et HTML" style="width: 355px; height: 100px; display: block; margin-left: auto; margin-right: auto;">
+
+<div class="welcome-message">
+  𝓑𝓲𝓮𝓷𝓿𝓮𝓷𝓾𝓮  𝓼𝓾𝓻 𝓜𝓸𝓷 𝓢𝓲𝓽𝓮 𝓦𝓩𝓫!
+</div>
+
+<h1 id="opener"><span>☢ 🅾︎🅻🅳🅴🆂🆃</span><span>🆂🆃🆁🅴🅰︎🅼☢</span></h1>
+
+
+
+<iframe width="360" height="315" src="https://www.youtube.com/embed/petivaEeYdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+    
+<div style="text-align: center;">
+  <button type="button" class="btn btn-primary">
+    Series Episodes 1-100
+  </button>
+  <a href="https://abonnement-streaming.oldestlucious.repl.co" class="btn btn-primary">Active premium</a>
+</div>
+    <div class="video-container">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nkYXwecrP1w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+<div style="text-align: center;">
+  <button type="button" class="btn btn-primary">
+    Series Episodes 1-100
+  </button>
+  <a href="https://grille-streming-video.oldestlucious.repl.co" class="btn btn-primary">Active premium</a>
+</div>
+
+
+<iframe width="360" height="315" src="https://www.youtube.com/embed/qGsegnz7oSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+    
+<div style="text-align: center;">
+  <button type="button" class="btn btn-primary">
+    Series Episodes 1-100
+  </button>
+  <a href="https://grille-streming-video.oldestlucious.repl.co" class="btn btn-primary">Link</a>
+</div>
+
+
+  
+  <div class="contact-form">
+    <h2>Contactez-nous</h2>
+    <form action="mailto:votre@email.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+      <input type="submit" value="Envoyer">
+    </form>
+  </div>
+
+
+
+<div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+<script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'paypal',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"amount":{"currency_code":"USD","value":0}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+            
+            // Full available details
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+            // Show a success message within this page, e.g.
+            const element = document.getElementById('paypal-button-container');
+            element.innerHTML = '';
+            element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+            // Or go to another URL:  actions.redirect('thank_you.html');
+            
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script>
+  
+    
+
+<a href="#" class="back-to-top">Revenir en haut</a>
+
+<footer>
+  <p>Copyright © 2023</p>
+</footer>
+
+  
+</body>
+</html>
